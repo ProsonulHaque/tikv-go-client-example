@@ -8,12 +8,7 @@ import (
 )
 
 func main() {
-    // cli, err := tikv.NewRawKVClient([]string{"192.168.199.113:2379"}, config.Security{})
-    // cli, err := tikv.NewRawKVClient([]string{"127.0.0.1:20160"}, config.Security{})
-    // cli, err := tikv.NewRawKVClient([]string{"0.0.0.0:2380"}, config.Security{})
-    // cli, err := tikv.NewRawKVClient([]string{"0.0.0.0:2379"}, config.Security{})
-    cli, err := tikv.NewRawKVClient([]string{"127.0.0.1:2379"}, config.Security{})
-    
+    cli, err := tikv.NewRawKVClient([]string{"192.168.10.128:2379"}, config.Security{})
     
     if err != nil {
         panic(err)
